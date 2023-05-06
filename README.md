@@ -1,4 +1,4 @@
-#JbCommands
+# JbCommands
 
 Visual studio extension that adds context menu items to run jetbrains command line tools.
 

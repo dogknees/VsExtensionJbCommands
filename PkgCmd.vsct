@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <Extern href="stdidcmd.h" />
+  <Extern href="vsshlids.h"/>
+  <Include href="KnownImageIds.vsct"/>
+  <Commands package="guidJbCommandsPkg">
+    <Groups>
+      <Group guid="guidJbCommandsCmdSet" id="MyEditorCtxGroup" priority="0x600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_CODEWIN"/>
+      </Group>
+    </Groups>
+
+    <Buttons>
+      <Button guid="guidJbCommandsCmdSet" id="cmdidCleanUpCode" priority="0x100" type="Button">
+        <Parent guid="guidJbCommandsCmdSet" id="MyEditorCtxGroup"/>
+        <Icon guid="ImageCatalogGuid" id="CleanData"/>
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>jbCleanUpCode</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidJbCommandsCmdSet" id="cmdidInspectCode" priority="0x100" type="Button">
+        <Parent guid="guidJbCommandsCmdSet" id="MyEditorCtxGroup"/>
+        <Icon guid="ImageCatalogGuid" id="FindInFile"/>
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>jbInspectCode</ButtonText>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+
+  <Symbols>
+    <GuidSymbol name="guidJbCommandsPkg" value="{91DAE0B4-5959-4C85-A99F-C85E0AE3A725}" />
+    <GuidSymbol name="guidJbCommandsCmdSet" value="{5A0375CE-55AF-4FAA-8928-B4F24B8DFC44}">
+      <IDSymbol name="MyEditorCtxGroup" value="0x1013" />
+      <IDSymbol name="cmdidCleanUpCode" value="0x2001" />
+      <IDSymbol name="cmdidInspectCode" value="0x2002" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>

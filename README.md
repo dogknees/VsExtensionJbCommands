@@ -8,6 +8,6 @@ InspectCode
 
 compatible with VS2015
 
-due to a microsoft bug this may need to be installed via command line:
-open cmd with administrator privileges.
-run "C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\VSIXInstaller.exe \"{path-to-vsix}\"".
+due to a microsoft bug this may need to be installed via command line:  
+open cmd with administrator privileges.  
+run "C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\VSIXInstaller.exe \"{path-to-vsix}\"".  
